@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>PeoplePost</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/PeoplePost.css">
+    <script src="/js/PeoplePost.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div>
+                <div class="content social-timeline">
+                    <div class="">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="social-wallpaper">
+                                    <div class="profile-hvr">
+                                        <i class="icofont icofont-ui-edit p-r-10"></i>
+                                        <i class="icofont icofont-ui-delete"></i>
+                                    </div>
+                                </div>
+                                <div class="timeline-btn">
+
+                                    <a href="#" class="btn btn-primary waves-effect waves-light"
+                                       onclick="showNotiFriend()">NotifiFriend</a>
+                                    <div id="showNotiFriend" class="w3-modal">
+                                        <div class="w3-modal-content w3-animate-zoom">
+                                            <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('showNotiFriend').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+                                                <h1>Notification</h1>
+                                            </div>
+
+                                            <table class="table">
+
+                                                <div id="showNotificationFriend"></div>
+
+
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div id="addFriend"></div>
+
+
+                                    <a href="#" class="btn btn-primary waves-effect waves-light"
+                                       onclick="showNoti()">Notification</a>
+                                    <div id="showNoti" class="w3-modal">
+                                        <div class="w3-modal-content w3-animate-zoom">
+                                            <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('showNoti').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+                                                <h1>Notification</h1>
+                                            </div>
+
+                                            <table class="table">
+
+                                                <div id="showNotification"></div>
+
+
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-xs-12">
+                                <div class="social-timeline-left">
+                                    <div class="card">
+                                        <div class="social-profile">
+                                            <img class="img-fluid width-100"
+                                                 src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+                                            <div class="profile-hvr m-t-15">
+                                                <i class="icofont icofont-ui-edit p-r-10"></i>
+                                                <i class="icofont icofont-ui-delete"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card-block social-follower">
+
+                                            <div class="row follower-counter">
+                                                <div id="showNamePage"></div>
+                                                <div id="showAddressPage"></div>
+                                                <div class="col-4">
+                                                    <a href="FeedPost.html">TimeLine</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a href="../login/Login.html">Log out</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <button class="btn btn-success btn-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="" data-original-title="90">
+                                                        <i class="fa fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button type="button"
+                                                        class="btn btn-outline-primary waves-effect btn-block"
+                                                >
+                                                    <i
+                                                            class="icofont icofont-ui-user m-r-10 "></i>
+                                                </button>
+
+
+                                                <p>
+                                                    <button onclick="document.getElementById('create').style.display='block'">
+                                                        Create Post
+                                                    </button>
+                                                </p>
+
+                                                <div id="create" class="w3-modal">
+                                                    <div class="w3-modal-content w3-animate-zoom">
+                                                        <div class="w3-container w3-black w3-display-container">
+                                                       <span onclick="document.getElementById('create').style.display='none'"
+                                                             class="w3-button w3-display-topright w3-large">x</span>
+                                                            <h1>CREATE</h1>
+                                                        </div>
+
+                                                        <table class="table">
+                                                            <tr>
+                                                                <td>Content<input id="UPost_content"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Image<input  id="UPost_img"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Date<input type="date" id="UPost_date"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Public Status<input id="UPost_isPublic"></td>
+                                                            </tr>
+                                                        </table>
+                                                        <button type="submit" class="btn btn-success"
+                                                                onclick="createPost()">create
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-header-text">Who to follow</h5>
+                                        </div>
+
+                                        <div id="listUnFr"></div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-xl-9 col-lg-8 col-md-8 col-xs-12 ">
+
+                                <div class="card social-tabs">
+                                    <ul class="nav nav-tabs md-tabs tab-timeline" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">Timeline</a>
+                                            <div class="slide"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#about" role="tab">About</a>
+                                            <div class="slide"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#photos" role="tab">Photos</a>
+                                            <div class="slide"></div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#friends" role="tab">Friends</a>
+                                            <div class="slide"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+
+                                    <div class="tab-pane active" id="timeline">
+                                        <div class="row">
+                                            <div class="col-md-12 timeline-dot">
+                                                <div class="social-timelines p-relative">
+
+                                                </div>
+                                                <div class="social-timelines p-relative">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="f-30 text-muted text-center">2014</div>
+                                        <div class="row">
+                                            <div class="col-md-12 timeline-dot">
+
+
+                                                <div id="ArrUPost"></div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="about">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="card-header-text">Basic Information</h5>
+                                                        <button id="edit-btn" type="button"
+                                                                class="btn btn-primary waves-effect waves-light f-right">
+                                                            <i class="icofont icofont-edit"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div id="view-info" class="row">
+                                                            <div class="col-lg-6 col-md-12">
+
+                                                                <div id="showInfo"></div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div id="edit-info" class="row" style="display: none;">
+                                                            <div class="col-lg-12 col-md-12">
+                                                                <form>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control"
+                                                                               placeholder="Full Name">
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <div class="form-radio">
+                                                                            <div class="form-radio">
+                                                                                <label class="md-check p-0">Gender</label>
+                                                                                <div class="radio radio-inline">
+                                                                                    <label>
+                                                                                        <input type="radio" name="radio"
+                                                                                               checked="checked">
+                                                                                        <i class="helper"></i>Male
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="radio radio-inline">
+                                                                                    <label>
+                                                                                        <input type="radio"
+                                                                                               name="radio">
+                                                                                        <i class="helper"></i>Female
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <input id="dropper-default" class="form-control"
+                                                                               type="text" placeholder="Birth Date">
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <select id="hello-single" class="form-control">
+                                                                            <option value="">---- Marital Status ----
+                                                                            </option>
+                                                                            <option value="married">Married</option>
+                                                                            <option value="unmarried">Unmarried</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="md-group-add-on">
+                                                                        <textarea rows="5" cols="5" class="form-control"
+                                                                                  placeholder="Address..."></textarea>
+                                                                    </div>
+                                                                    <div class="text-center m-t-20">
+                                                                        <a href="javascript:;" id="edit-save"
+                                                                           class="btn btn-primary waves-effect waves-light m-r-20">Save</a>
+                                                                        <a href="javascript:;" id="edit-cancel"
+                                                                           class="btn btn-default waves-effect waves-light">Cancel</a>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="photos">
+                                        <div class="card">
+
+                                            <div class="card-block">
+                                                <div class="demo-gallery">
+                                                    <ul id="profile-lightgallery" class="row">
+
+                                                        <div id="showImg"></div>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="friends">
+                                        <div class="row">
+
+                                            <div id="showFriend"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="createPost1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('create').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>CREATE</h1>
+        </div>
+        <form action="/create" method="post">
+            <table class="table">
+                <tr>
+                    <td><input name="title"></td>
+                </tr>
+                <tr>
+                    <td><input name="content"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><input name="views" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input name="likes" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input name="dislike" value="0"></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-success" onclick="creatPost()">
+                create
+            </button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

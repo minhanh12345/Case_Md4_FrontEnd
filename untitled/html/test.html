@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Bootstrap Example</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+</head>
+<body>
+
+
+<p>
+    <button onclick="document.getElementById('create').style.display='block'">
+        Create User/Admin
+    </button>
+</p>
+
+<div id="create" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('create').style.display='none'"
+                  class="w3-button w3-display-topright w3-large">x</span>
+            <h1>CREATE</h1>
+        </div>
+        <form action="/create" method="post">
+            <table class="table">
+                <tr>
+                    <td><input name="title"></td>
+                </tr>
+                <tr>
+                    <td><input name="content"></td>
+                </tr>
+                <tr>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><input name="views" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input name="likes" value="0"></td>
+                </tr>
+                <tr>
+                    <td><input name="dislike" value="0"></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-success" onclick="creatPost()" >create</button>
+
+        </form>
+    </div>
+</div>
+
+
+<!--            show crud-->
+
+<!--           end crud -->
+
+</body>
+</html>
